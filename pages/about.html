@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Noto+Serif+JP:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<style>
+.about-inner {
+  display: grid; grid-template-columns: 280px 1fr;
+  gap: 72px; align-items: start; max-width: 960px;
+}
+.about-portrait {
+  aspect-ratio: 3/4; background: var(--light);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--mid); font-size: 0.78rem; letter-spacing: 0.15em;
+  font-family: 'Cormorant Garamond', serif; font-style: italic;
+}
+.about-name-en {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.2rem; font-weight: 300; font-style: italic;
+  color: var(--ink); margin-bottom: 4px;
+}
+.about-name-jp {
+  font-size: 0.8rem; letter-spacing: 0.25em; color: var(--mid);
+  margin-bottom: 36px;
+}
+.about-text p {
+  font-size: 0.88rem; line-height: 2.3; color: var(--mid); margin-bottom: 20px;
+}
+.about-table {
+  margin-top: 36px; width: 100%; border-collapse: collapse;
+}
+.about-table tr { border-bottom: 1px solid var(--light); }
+.about-table th {
+  font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 300;
+  font-size: 0.85rem; color: var(--accent2); letter-spacing: 0.1em;
+  padding: 14px 20px 14px 0; vertical-align: top; white-space: nowrap;
+  width: 120px; text-align: left;
+}
+.about-table td {
+  font-size: 0.85rem; color: var(--mid); padding: 14px 0;
+  line-height: 1.9; vertical-align: top;
+}
+.skill-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.skill-tag {
+  padding: 5px 14px; border: 1px solid var(--light);
+  font-size: 0.76rem; letter-spacing: 0.08em; color: var(--mid);
+}
+
+@media (max-width: 800px) {
+  .about-inner { grid-template-columns: 1fr; gap: 40px; }
+  .about-portrait { width: 60%; max-width: 220px; }
+}
+</style>
+</head>
+<body>
+<nav>
+  <a href="../index.html" class="nav-logo">Portfolio</a>
+  <ul class="nav-links">
+    <li><a href="illustration.html">Gallery</a></li>
+    <li><a href="manga.html">Manga</a></li>
+    <li><a href="price.html">Price</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<main class="page-main">
+  <div class="section-header">
+    <span class="section-en">About</span>
+    <span class="section-jp">プロフィール</span>
+  </div>
+  <div class="about-inner">
+    <div class="about-portrait">Photo</div>
+    <div class="about-text">
+      <h2 class="about-name-en">Your Name</h2>
+      <p class="about-name-jp">お名前（漢字）</p>
+      <p>
+        フリーランスの漫画家・イラストレーターとして活動しています。<br>
+        キャラクターデザインからストーリー漫画まで幅広く対応いたします。
+      </p>
+      <p>
+        ※ こちらのプロフィール文は後ほど編集いただけます。<br>
+        　使用ソフト・活動歴・得意ジャンルなどをご記入ください。
+      </p>
+      <table class="about-table">
+        <tr>
+          <th>Tools</th>
+          <td>
+            <div class="skill-tags">
+              <span class="skill-tag">CLIP STUDIO PAINT</span>
+              <span class="skill-tag">Adobe Photoshop</span>
+              <span class="skill-tag">Adobe Illustrator</span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th>Genre</th>
+          <td>
+            <div class="skill-tags">
+              <span class="skill-tag">キャラクターデザイン</span>
+              <span class="skill-tag">ストーリー漫画</span>
+              <span class="skill-tag">同人誌</span>
+              <span class="skill-tag">ファンタジー</span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th>Activity</th>
+          <td>フリーランス（20XX年〜）</td>
+        </tr>
+        <tr>
+          <th>Links</th>
+          <td>
+            Twitter / X：@yourhandle<br>
+            Pixiv：https://www.pixiv.net/users/xxxxxxx
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</main>
+
+<footer><p>&copy; 2025 Your Name — All Rights Reserved</p></footer>
+<script src="../js/main.js"></script>
+</body>
+</html>

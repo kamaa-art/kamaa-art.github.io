@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Price — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Noto+Serif+JP:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<style>
+.price-intro {
+  font-size: 0.9rem; line-height: 2.2; color: var(--mid);
+  max-width: 640px; margin-bottom: 60px;
+}
+.price-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 28px; margin-bottom: 48px;
+}
+.price-card {
+  border: 1px solid var(--light); padding: 36px;
+  position: relative; overflow: hidden;
+}
+.price-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0;
+  height: 3px; background: var(--accent2);
+}
+.price-card-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem; font-weight: 300; font-style: italic;
+  color: var(--ink); margin-bottom: 6px;
+}
+.price-card-jp {
+  font-size: 0.75rem; color: var(--mid); letter-spacing: 0.15em;
+  margin-bottom: 28px;
+}
+.price-items { list-style: none; }
+.price-items li {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 13px 0; border-bottom: 1px solid var(--light);
+  font-size: 0.88rem; gap: 16px;
+}
+.price-items li:last-child { border-bottom: none; }
+.price-label { color: var(--mid); }
+.price-value {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem; color: var(--accent); white-space: nowrap;
+}
+.price-note {
+  padding: 28px 32px; background: #f0ebe4;
+  border-left: 3px solid var(--accent2);
+  font-size: 0.83rem; line-height: 2.2; color: var(--mid);
+}
+</style>
+</head>
+<body>
+<nav>
+  <a href="../index.html" class="nav-logo">Portfolio</a>
+  <ul class="nav-links">
+    <li><a href="illustration.html">Gallery</a></li>
+    <li><a href="manga.html">Manga</a></li>
+    <li><a href="price.html" class="active">Price</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<main class="page-main">
+  <div class="section-header">
+    <span class="section-en">Price</span>
+    <span class="section-jp">料金表</span>
+  </div>
+  <p class="price-intro">
+    料金はご依頼内容・用途・納期などによって異なります。<br>
+    以下はあくまで目安です。まずはお気軽にご相談ください。<br>
+    お見積りは無料です。
+  </p>
+
+  <div class="price-categories">
+    <div class="price-card">
+      <div class="price-card-title">Illustration</div>
+      <div class="price-card-jp">イラスト</div>
+      <ul class="price-items">
+        <li><span class="price-label">バストアップ（線画）</span><span class="price-value">¥8,000〜</span></li>
+        <li><span class="price-label">バストアップ（フルカラー）</span><span class="price-value">¥15,000〜</span></li>
+        <li><span class="price-label">全身（線画）</span><span class="price-value">¥12,000〜</span></li>
+        <li><span class="price-label">全身（フルカラー）</span><span class="price-value">¥22,000〜</span></li>
+        <li><span class="price-label">背景あり（フルカラー）</span><span class="price-value">¥30,000〜</span></li>
+        <li><span class="price-label">複数キャラクター</span><span class="price-value">要相談</span></li>
+      </ul>
+    </div>
+
+    <div class="price-card">
+      <div class="price-card-title">Manga</div>
+      <div class="price-card-jp">漫画・コミック</div>
+      <ul class="price-items">
+        <li><span class="price-label">1ページ（モノクロ）</span><span class="price-value">¥8,000〜</span></li>
+        <li><span class="price-label">1ページ（フルカラー）</span><span class="price-value">¥15,000〜</span></li>
+        <li><span class="price-label">表紙</span><span class="price-value">¥25,000〜</span></li>
+        <li><span class="price-label">短編（8〜16p）</span><span class="price-value">要相談</span></li>
+        <li><span class="price-label">長編・連載</span><span class="price-value">要相談</span></li>
+      </ul>
+    </div>
+
+    <div class="price-card">
+      <div class="price-card-title">Commercial Use</div>
+      <div class="price-card-jp">商用・その他</div>
+      <ul class="price-items">
+        <li><span class="price-label">SNS・アイコン用</span><span class="price-value">¥10,000〜</span></li>
+        <li><span class="price-label">グッズ用イラスト</span><span class="price-value">¥20,000〜</span></li>
+        <li><span class="price-label">書籍・同人誌表紙</span><span class="price-value">¥25,000〜</span></li>
+        <li><span class="price-label">商業出版</span><span class="price-value">要相談</span></li>
+        <li><span class="price-label">既存作品の使用許諾</span><span class="price-value">要相談</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="price-note">
+    ※ 上記はすべて目安の金額です（税込）。実際の金額はご依頼内容・使用範囲により異なります。<br>
+    ※ 急ぎの場合は特急料金が発生することがあります。<br>
+    ※ 著作権の帰属・商用・非商用によっても料金が変わります。詳細はお問い合わせください。
+  </div>
+</main>
+
+<footer><p>&copy; 2025 Your Name — All Rights Reserved</p></footer>
+<script src="../js/main.js"></script>
+</body>
+</html>

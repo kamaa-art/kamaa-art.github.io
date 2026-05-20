@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Noto+Serif+JP:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<style>
+.contact-wrap { max-width: 720px; }
+.contact-lead {
+  font-size: 0.9rem; line-height: 2.3; color: var(--mid); margin-bottom: 52px;
+}
+.contact-rows { border-top: 1px solid var(--light); }
+.contact-row {
+  display: grid; grid-template-columns: 160px 1fr;
+  padding: 24px 0; border-bottom: 1px solid var(--light);
+  font-size: 0.88rem;
+}
+.contact-key {
+  font-family: 'Cormorant Garamond', serif; font-style: italic;
+  color: var(--accent2); letter-spacing: 0.1em; font-size: 1rem;
+  padding-top: 2px;
+}
+.contact-val { color: var(--mid); line-height: 2.1; }
+.contact-val a { color: var(--ink); }
+
+@media (max-width: 600px) {
+  .contact-row { grid-template-columns: 1fr; gap: 8px; }
+}
+</style>
+</head>
+<body>
+<nav>
+  <a href="../index.html" class="nav-logo">Portfolio</a>
+  <ul class="nav-links">
+    <li><a href="illustration.html">Gallery</a></li>
+    <li><a href="manga.html">Manga</a></li>
+    <li><a href="price.html">Price</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+</nav>
+
+<main class="page-main">
+  <div class="section-header">
+    <span class="section-en">Contact</span>
+    <span class="section-jp">お問い合わせ</span>
+  </div>
+  <div class="contact-wrap">
+    <p class="contact-lead">
+      ご依頼・ご相談はメールにてお受けしております。<br>
+      制作内容・用途・ご予算・納期をできるだけ詳しくお知らせいただくと<br>
+      スムーズにご対応できます。2〜3営業日以内にご返信いたします。
+    </p>
+    <div class="contact-rows">
+      <div class="contact-row">
+        <span class="contact-key">Mail</span>
+        <span class="contact-val">yourname@example.com<br>（後ほどメールアドレスを変更してください）</span>
+      </div>
+      <div class="contact-row">
+        <span class="contact-key">SNS</span>
+        <span class="contact-val">
+          Twitter / X：@yourhandle<br>
+          Pixiv：https://www.pixiv.net/users/xxxxxxx
+        </span>
+      </div>
+      <div class="contact-row">
+        <span class="contact-key">ご依頼の際に</span>
+        <span class="contact-val">
+          ・制作内容（媒体・用途・使用期間）<br>
+          ・制作点数・仕様（サイズ・カラー等）<br>
+          ・ご予算<br>
+          ・納期<br>
+          上記をご記載いただけると助かります。
+        </span>
+      </div>
+      <div class="contact-row">
+        <span class="contact-key">備考</span>
+        <span class="contact-val">
+          個人の方からのご依頼はご相談ください。<br>
+          内容によってはお断りする場合もございます。<br>
+          ご予算・制作内容の記載がない場合はご返信を控える場合があります。
+        </span>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer><p>&copy; 2025 Your Name — All Rights Reserved</p></footer>
+<script src="../js/main.js"></script>
+</body>
+</html>
